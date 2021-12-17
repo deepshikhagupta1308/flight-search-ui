@@ -1,0 +1,213 @@
+body{
+	font-family: Arial;
+	font-size: 100%;
+}
+header{
+	width: 100%;
+	padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px #000;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+.tab-title{
+	text-align: center;
+	color: #000;
+	background: #ccc;
+	padding: 5px;
+	width: 45%;
+	float: left;
+	font-size: 0.8em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.tab-title.active{
+	background: #000;
+	color: #fff;
+}
+.tab-content{
+	padding: 5px;
+    clear: both;
+    width: 97%;
+    
+}
+
+form{width: 100%;}
+input, select{
+	width: 98%;
+	margin-bottom: 5px;
+}
+input[type='submit']{
+	width: 100%;
+	margin-bottom: 0px;
+	
+}
+
+
+[class*="col-"] {
+    width: 100%;
+}
+.row{
+	width: 100%;
+}
+.f-left{
+	float: left;
+}
+.hide{
+	display: none;
+}
+h1, h2, h3{
+	padding: 0;
+	margin: 0;
+}
+.text-center{
+	text-align: center;
+}
+
+
+#amount{
+	border:0; 
+	color:#000; 
+	font-weight:bold;
+	background: transparent;
+}
+.refineSearch{
+	margin: 10px 0;
+}
+.refineSearch p{
+	background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+}
+.ui-slider-handle{
+	border-radius: 10px;
+}
+.ui-slider-horizontal{
+	height: 0.1em;
+	width: 95%;
+	margin-bottom: 1.5em;
+	margin-left: 0.5em;
+}
+.ui-slider-horizontal .ui-slider-handle{
+	top: -0.5em;
+	outline: none;
+}
+
+
+
+.content-right{
+	box-sizing: border-box;
+}
+.startSearchDisplay {
+	padding: 20px;
+    text-align: center;
+    background: #fff;
+    border: solid 1px #000;
+}
+.content-header{
+	float: left;
+    border: solid 1px #000;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.headerOneWay, .headerReturn {
+	padding: 0;
+    margin: 0;
+}
+.dep-date, .arr-date{
+	font-size: 0.8em;
+}
+.tripDetails{
+	float: left;
+    border: solid 1px #000;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.tripDetails input[type="button"]{
+	margin: 0;
+}
+.oneWay-details, .return-details{
+	padding-top: 10px;
+    font-size: 0.8em;
+    width: 40%;
+    margin-bottom: 10px;
+}
+.return-details{
+	border-left: dotted 1px #ccc;
+    box-sizing: border-box;
+    padding-left: 2%;
+    width: 48%;
+}
+.flightDetails{
+	padding: 10px 0;
+    font-weight: bold;
+}
+.price{
+	font-size: 1em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    body {
+	    width: 960px;
+	    margin: 0 auto;
+	    min-height: 657px;
+	  }
+
+	  .tab-content{
+	  	width: 95%;
+	  }
+	input[type='submit']{
+		width: 30%;
+		margin-bottom: 0px;
+		
+	}
+	.dep-date, .arr-date{
+		font-size: 0.8em;
+	    text-align: center;
+	}
+	.content-right{
+    	padding-left: 5px;
+	}
+
+	.ui-slider-horizontal{
+		width: 93%;
+	}
+	.oneWay-details, .return-details{
+		margin-bottom: 0;
+	}
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+	.margin-right-10{
+		margin-right: 10px;
+	}
+	.margin-right-2{
+		margin-right: 2px;
+	}
+	.searchDisplay{
+		border: solid 1px #ccc;
+	    margin: 0 0 0 10px;
+	    padding: 10px;
+	    box-sizing: border-box;
+	}
+
+}

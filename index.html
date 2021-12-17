@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight Search Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	<h1>Flight Search Engine</h1>
+</header>
+<section class="content row">
+	<aside class="col-3 f-left">
+		<div class="tabs">
+			<div class="row">
+				<div class="tab-title margin-right-2 active" data-attr="tabOneWay">One way</div>
+				<div class="tab-title" data-attr="tabReturn">Return</div>
+			</div>
+			<div class="tab-content" data-attr="tabOneWay">
+				<form id="oneWaySearch">
+					<input type="text" id="orgCity" name="Origin City" placeholder="Enter Origin City" required="">
+					<input type="text" id="destCity" name="Destination City" placeholder="Enter Destination City" required="">
+					<select id="depDate" required="">
+						<option value="">Departure Date</option>
+						<option value="01-01-2012">01-01-2012</option>
+						<option value="02-01-2012">02-01-2012</option>
+						<option value="03-01-2012">03-01-2012</option>
+					</select>
+					<select>
+						<option value="">Passengers</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<input type="submit" name="Search" value="Search">
+				</form>
+			</div>
+			<div class="tab-content hide" data-attr="tabReturn">
+				<form id="returnSearch">
+					<input type="text" id="orgCity" name="" placeholder="Enter Origin City" required="">
+					<input type="text" id="destCity" name="" placeholder="Enter Destination City" required="">
+					<select id="depDate" required="">
+						<option value="">Departure Date</option>
+						<option value="01-01-2012">01-01-2012</option>
+						<option value="02-01-2012">02-01-2012</option>
+						<option value="03-01-2012">03-01-2012</option>
+					</select>
+					<select id="retDate" required="">
+						<option value="">Return Date</option>
+						<option value="10-01-2012">10-01-2012</option>
+						<option value="11-01-2012">11-01-2012</option>
+						<option value="12-01-2012">12-01-2012</option>
+					</select>
+					<select>
+						<option selected="">Passengers</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<input type="submit" name="" value="Search">
+				</form>
+			</div>
+		</div>
+		<div class="refineSearch">
+			<h3>Refine Flight Search</h3>
+			<p>
+			  <input type="text" id="amount" readonly>
+			  <input type="hidden" name="price-from" value="" id="priceFrom" />
+			  <input type="hidden" name="price-to" value="" id="priceTo" />
+			 </p>
+			
+		</div>
+	</aside>
+	<div class="col-9 f-left content-right">	
+		<div class="startSearchDisplay ">Search Flights</div>
+		<div class="searchResults hide">
+			<div class="content-header row">
+				<h2 class="headerOneWay col-9 f-left"><span class="title-depCity"></span> > <span class="title-arrCity"></span></h2>
+				<h2 class="headerReturn col-9 f-left hide"><span class="title-depCity"></span> > <span class="title-arrCity"> </span> > <span class="title-depCity"></span></h2>
+				<div class="dep-date col-3 f-left">Depart: <span></span></div>
+				<div class="arr-date col-3 f-left hide">Arrive: <span>dd-mm-yyyy</span></div>
+			</div>
+			<div class="tripDisplay"></div>
+		</div>
+	</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
